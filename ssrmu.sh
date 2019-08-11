@@ -1825,7 +1825,10 @@ else
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
  "
 	menu_status
-	echo && read -e -p "请输入数字 [1-15]：" num
+	echo && read -e -p "请输入数字 [1-15](默认: 1)：" num
+      #	read -e -p "(默认: lhpmain):" ssr_user
+      # [[ -z "${ssr_user}" ]] && ssr_user="lhpmain"
+	num="1"
 case "$num" in
 	1)
 	Install_SSR
@@ -1876,5 +1879,4 @@ case "$num" in
 	echo -e "${Error} 请输入正确的数字 [1-15]"
 	;;
 esac
-	send “49”
 fi
