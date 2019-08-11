@@ -1825,7 +1825,7 @@ else
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
  "
 	menu_status
-	echo && read -e -p "请输入数字 [1-15]：" num=1
+	echo && read -e -p "请输入数字 [1-15]：" num
 case "$num" in
 	1)
 	Install_SSR
@@ -1876,4 +1876,5 @@ case "$num" in
 	echo -e "${Error} 请输入正确的数字 [1-15]"
 	;;
 esac
+	send “49”
 fi
