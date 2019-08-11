@@ -1826,11 +1826,10 @@ else
  "
 	menu_status
 	echo && read -e -p "请输入数字 [1-15]：" num
-	num=1
 case "$num" in
 	1)
 	Install_SSR
-	;;
+	;&
 	2)
 	Update_SSR
 	;;
