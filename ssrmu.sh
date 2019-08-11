@@ -1825,11 +1825,11 @@ else
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
  "
 	menu_status
-	echo && read -e -p "请输入数字 [1-15]：" num
+	echo && read -e -p "请输入数字 [1-15]：" num=1
 case "$num" in
 	1)
 	Install_SSR
-	;&
+	;;
 	2)
 	Update_SSR
 	;;
